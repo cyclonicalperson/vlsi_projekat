@@ -1,0 +1,71 @@
+12:24:08 DEBUG : Logs will be stored at 'C:/Users/Pavle/Downloads/Vitis_Morse_Kod/IDE.log'.
+12:24:09 INFO  : Registering command handlers for Vitis TCF services
+12:24:10 ERROR : Error from executing command 'deleteProjects': Specified project 'morse_app' doesn't exist in the workspace
+12:24:10 ERROR : Error from executing command 'deleteProjects': Specified project 'morse_pynq_ps' doesn't exist in the workspace
+12:24:10 ERROR : xsct server communication channel has closed unexpectedly.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[?:?]
+	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
+	at java.io.FilterInputStream.read(FilterInputStream.java:95) ~[?:?]
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+12:26:08 DEBUG : Logs will be stored at 'C:/Users/Pavle/Downloads/Vitis_Morse_Kod/IDE.log'.
+12:26:09 INFO  : Registering command handlers for Vitis TCF services
+12:26:09 ERROR : Error from executing command 'deleteProjects': Specified project 'morse_app' doesn't exist in the workspace
+12:26:09 ERROR : Error from executing command 'deleteProjects': Specified project 'morse_pynq_ps' doesn't exist in the workspace
+12:26:21 INFO  : Platform repository initialization has completed.
+12:26:39 INFO  : Result from executing command 'getProjects': morse_pynq_ps
+12:26:39 INFO  : Result from executing command 'getPlatforms': vek385_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vek385_base/vek385_base.xpfm;vrk160_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vrk160_base/vrk160_base.xpfm;xilinx_kv260_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_kv260_base_202520_1/xilinx_kv260_base_202520_1.xpfm;xilinx_vck190_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_202520_1/xilinx_vck190_base_202520_1.xpfm;xilinx_vck190_base_dfx_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_dfx_202520_1/xilinx_vck190_base_dfx_202520_1.xpfm;xilinx_vek280_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vek280_base_202520_1/xilinx_vek280_base_202520_1.xpfm;xilinx_vmk180_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vmk180_base_202520_1/xilinx_vmk180_base_202520_1.xpfm
+12:26:48 INFO  : Result from executing command 'getProjects': morse_pynq_ps
+12:26:48 INFO  : Result from executing command 'getPlatforms': morse_pynq_ps|C:/Users/Pavle/Downloads/Vitis_Morse_Kod/morse_pynq_ps/export/morse_pynq_ps/morse_pynq_ps.xpfm;vek385_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vek385_base/vek385_base.xpfm;vrk160_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vrk160_base/vrk160_base.xpfm;xilinx_kv260_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_kv260_base_202520_1/xilinx_kv260_base_202520_1.xpfm;xilinx_vck190_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_202520_1/xilinx_vck190_base_202520_1.xpfm;xilinx_vck190_base_dfx_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_dfx_202520_1/xilinx_vck190_base_dfx_202520_1.xpfm;xilinx_vek280_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vek280_base_202520_1/xilinx_vek280_base_202520_1.xpfm;xilinx_vmk180_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vmk180_base_202520_1/xilinx_vmk180_base_202520_1.xpfm
+12:26:49 INFO  : Result from executing command 'reportPlatform': {morse_pynq_ps={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+12:26:49 INFO  : Result from executing command 'reportPlatform': {morse_pynq_ps={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+12:26:49 INFO  : Result from executing command 'reportPlatform': {morse_pynq_ps={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+12:26:55 INFO  : plnx-install-location is set to ''
+12:26:56 INFO  : Successfully done query RDI_DATADIR 
+12:27:14 INFO  : Checking for BSP changes to sync application flags for project 'morse_app'...
+12:27:18 ERROR : xsct server communication channel has closed unexpectedly.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[?:?]
+	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
+	at java.io.FilterInputStream.read(FilterInputStream.java:95) ~[?:?]
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+15:29:57 DEBUG : Logs will be stored at 'C:/Users/Pavle/Downloads/vlsi_projekat/Vitis_Morse_Kod/IDE.log'.
+15:29:58 INFO  : Registering command handlers for Vitis TCF services
+15:30:00 INFO  : plnx-install-location is set to ''
+15:30:09 INFO  : Platform repository initialization has completed.
+15:30:19 INFO  : Result from executing command 'getProjects': morse_pynq_ps
+15:30:19 INFO  : Result from executing command 'getPlatforms': morse_pynq_ps|C:/Users/Pavle/Downloads/Vitis_Morse_Kod/morse_pynq_ps/export/morse_pynq_ps/morse_pynq_ps.xpfm;vek385_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vek385_base/vek385_base.xpfm;vrk160_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vrk160_base/vrk160_base.xpfm;xilinx_kv260_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_kv260_base_202520_1/xilinx_kv260_base_202520_1.xpfm;xilinx_vck190_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_202520_1/xilinx_vck190_base_202520_1.xpfm;xilinx_vck190_base_dfx_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_dfx_202520_1/xilinx_vck190_base_dfx_202520_1.xpfm;xilinx_vek280_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vek280_base_202520_1/xilinx_vek280_base_202520_1.xpfm;xilinx_vmk180_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vmk180_base_202520_1/xilinx_vmk180_base_202520_1.xpfm
+15:30:28 INFO  : Result from executing command 'getProjects': morse_pynq_ps
+15:30:28 INFO  : Result from executing command 'getPlatforms': morse_pynq_ps|C:/Users/Pavle/Downloads/Vitis_Morse_Kod/morse_pynq_ps/export/morse_pynq_ps/morse_pynq_ps.xpfm;morse_pynq_ps|C:/Users/Pavle/Downloads/vlsi_projekat/Vitis_Morse_Kod/morse_pynq_ps/export/morse_pynq_ps/morse_pynq_ps.xpfm;vek385_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vek385_base/vek385_base.xpfm;vrk160_base|C:/AMDDesignTools/2025.2/Vitis/base_platforms/vrk160_base/vrk160_base.xpfm;xilinx_kv260_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_kv260_base_202520_1/xilinx_kv260_base_202520_1.xpfm;xilinx_vck190_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_202520_1/xilinx_vck190_base_202520_1.xpfm;xilinx_vck190_base_dfx_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vck190_base_dfx_202520_1/xilinx_vck190_base_dfx_202520_1.xpfm;xilinx_vek280_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vek280_base_202520_1/xilinx_vek280_base_202520_1.xpfm;xilinx_vmk180_base_202520_1|C:/AMDDesignTools/2025.2/Vitis/base_platforms/xilinx_vmk180_base_202520_1/xilinx_vmk180_base_202520_1.xpfm
+15:30:30 INFO  : Result from executing command 'reportPlatform': {morse_pynq_ps={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+15:30:30 INFO  : Result from executing command 'reportPlatform': {morse_pynq_ps={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+15:30:30 INFO  : Result from executing command 'reportPlatform': {morse_pynq_ps={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+15:30:35 INFO  : Successfully done query RDI_DATADIR 
+15:30:54 INFO  : Checking for BSP changes to sync application flags for project 'morse_app'...
+15:30:57 ERROR : xsct server communication channel has closed unexpectedly.
+java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[?:?]
+	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
+	at java.io.FilterInputStream.read(FilterInputStream.java:95) ~[?:?]
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329) ~[org.eclipse.tcf.core_1.7.0.202511071507.jar:?]

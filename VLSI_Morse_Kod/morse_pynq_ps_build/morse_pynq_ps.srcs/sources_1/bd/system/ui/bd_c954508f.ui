@@ -1,0 +1,58 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.609616",
+   "Default View_TopLeft":"-100,-52",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1560 -y 50 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1560 -y 80 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port port-id_button0 -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_button1 -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace port port-id_button2 -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port port-id_button3 -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace port port-id_led0 -pg 1 -lvl 6 -x 1560 -y 370 -defaultsOSRD
+preplace port port-id_led1 -pg 1 -lvl 6 -x 1560 -y 400 -defaultsOSRD
+preplace port port-id_led2 -pg 1 -lvl 6 -x 1560 -y 430 -defaultsOSRD
+preplace port port-id_led3 -pg 1 -lvl 6 -x 1560 -y 460 -defaultsOSRD
+preplace port port-id_rgb_r_n -pg 1 -lvl 6 -x 1560 -y 490 -defaultsOSRD
+preplace port port-id_rgb_g_n -pg 1 -lvl 6 -x 1560 -y 520 -defaultsOSRD
+preplace port port-id_rgb_b_n -pg 1 -lvl 6 -x 1560 -y 550 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 110 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 860 -y 220 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 570 -y 200 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 220 -y 330 -defaultsOSRD
+preplace inst morse_top_0 -pg 1 -lvl 4 -x 1170 -y 480 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1420 -y 590 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 220 420 70 710
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 230 410
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 430 320 710J
+preplace netloc clk_1 1 0 4 20J 450 NJ 450 NJ 450 1000J
+preplace netloc button0_1 1 0 4 NJ 440 NJ 440 NJ 440 1010J
+preplace netloc button1_1 1 0 4 NJ 470 NJ 470 NJ 470 NJ
+preplace netloc button2_1 1 0 4 NJ 500 NJ 500 NJ 500 1030J
+preplace netloc button3_1 1 0 4 NJ 530 NJ 530 NJ 530 1000J
+preplace netloc morse_top_0_led0 1 4 2 1310J 370 NJ
+preplace netloc morse_top_0_led1 1 4 2 1320J 400 NJ
+preplace netloc morse_top_0_led2 1 4 2 1310J 430 NJ
+preplace netloc morse_top_0_led3 1 4 2 NJ 460 NJ
+preplace netloc morse_top_0_rgb_r_n 1 4 2 NJ 480 1540J
+preplace netloc morse_top_0_rgb_g_n 1 4 2 NJ 500 1540J
+preplace netloc morse_top_0_rgb_b_n 1 4 2 NJ 520 1530J
+preplace netloc morse_top_0_uart_ascii_data 1 4 1 1320 540n
+preplace netloc morse_top_0_uart_data_valid 1 4 1 1310 560n
+preplace netloc xlconcat_0_dout 1 3 3 NJ 210 NJ 210 1520
+preplace netloc axi_gpio_0_gpio2_io_o 1 3 1 1020 250n
+preplace netloc processing_system7_0_DDR 1 1 5 420J 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430 120n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 200
+levelinfo -pg 1 0 220 570 860 1170 1420 1560
+pagesize -pg 1 -db -bbox -sgen -100 0 1670 660
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="morse_app" location="C:/Users/Pavle/Downloads/vlsi_projekat/Vitis_Morse_Kod/morse_app" platform="C:/Users/Pavle/Downloads/vlsi_projekat/Vitis_Morse_Kod/morse_pynq_ps/export/morse_pynq_ps/morse_pynq_ps.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="morse_app_system" sysConfig="morse_pynq_ps" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="cf543b79d79c685e6202211e10e25ae6">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1481293734" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.923471252" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

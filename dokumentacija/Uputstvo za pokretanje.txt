@@ -1,0 +1,45 @@
+=== Morse enkoder/dekoder na PYNQ-Z2 — uputstvo ===
+
+------------------------------------------------------------------------
+MAPIRANJE DUGMICA
+------------------------------------------------------------------------
+
+  BTN0          Tacka (.)
+  BTN1          Crta (-)
+  BTN2          Obrisi trenutni nedovrseni unos
+                (ako je akumulator prazan: obrisi celu poruku)
+  BTN3          Kratak pritisak  -> zavrsi slovo / unesi razmak
+                Dug pritisak (>=1.5s) -> reprodukuj celu poruku preko RGB LED-a
+
+------------------------------------------------------------------------
+POKRETANJE — PL-ONLY VARIJANTA (morse_pynq, bez PS, samo LED echo)
+------------------------------------------------------------------------
+
+  1. vivado -mode batch -source tcl/build_project.tcl
+  2. Vivado Hardware Manager -> Program Device -> output/morse_pynq.bit
+  3. Kucati Morse kod na dugmicima
+
+------------------------------------------------------------------------
+POKRETANJE — PS+PL VARIJANTA (morse_pynq_ps, dekodovana slova i na serijskom terminalu)
+------------------------------------------------------------------------
+
+  1. vivado -mode batch -source tcl/build_project_ps.tcl
+       -> generise output/morse_pynq_ps.bit i output/morse_pynq_ps.xsa
+
+  2. Vitis -> Platform Project iz output/morse_pynq_ps.xsa
+           -> Application Project: Empty Application (C), standalone
+           -> Kopirati sdk_app/src/main.c u src/
+           -> Build All -> Run As -> Launch on Hardware
+
+     (alternativno, komandna linija, nacin koji ja koristim):
+       xsct tcl/build_ps.tcl
+	   xsct tcl/run_ps.tcl
+	  NAPOMENA, potrebno je pokrenuti xsct pre komande, proveriti PATH do settings64:
+	   C:\AMDDesignTools\settings64.bat
+	  Putanje u samim tlc fajlovima se takodje mogu razlikovati, u slucaju greske proveriti ih
+	
+  3. Serijski terminal: 115200 baud, 8N1
+       Windows: PuTTY -> Serial -> COMx (Device Manager -> Ports, veci broj)
+       Linux:   screen /dev/ttyUSB1 115200
+
+  4. Kucati Morse kod na dugmicima — slova se pojavljuju uzivo u terminalu
