@@ -1,10 +1,10 @@
 # Morse kod enkoder/dekoder na FPGA (PYNQ-Z2)
 
-Projekat za predmet **Projektovanje VLSI sistema** — hardverski Morzeov enkoder/dekoder implementiran u Verilogu
+Projekat za predmet **Projektovanje VLSI sistema** - hardverski Morzeov enkoder/dekoder implementiran u Verilogu
 za **PYNQ-Z2** razvojnu pločicu (Zynq-7000, `xc7z020clg400-1`)
 
 Pločica nema ugrađen alfanumerički displej, pa se dekodirana poruka
-"čita" preko RGB LED echo animacije i 4 obične LED diode — ili, u PS
+"čita" preko RGB LED echo animacije i 4 obične LED diode - ili, u PS
 varijanti projekta, direktno kao tekst na serijskom terminalu računara.
 
 <img width="442" height="415" alt="morse azbuka" src="https://github.com/user-attachments/assets/4e1a2c9a-3788-4310-a6c0-da80e2a76d50" />
@@ -28,7 +28,7 @@ Projekat postoji u dve nezavisne varijante:
 | **PS+PL** | `tcl/build_project_ps.tcl` | `output/morse_pynq_ps.bit` | ARM procesor (PS) komunicira sa PL-om preko AXI GPIO, dekodovana slova se šalju i na serijski terminal (115200 8N1) |
 
 Obe varijante su potpuno funkcionalne i međusobno nezavisne.
-Detalji PS+PL proširenja nalaze se u `dokumentacija/PS_PL_AXI_UART.docx`.
+Detalji PS+PL proširenja nalaze se u `dokumentacija/PS-AXI-PL dokumentacija.docx`.
 
 ## Funkcionalnosti
 
@@ -110,20 +110,19 @@ vlsi_projekat/
 ├── output/
 │   ├── morse_pynq.bit           Bitstream - PL-only varijanta
 │   └── morse_pynq_ps.bit        Bitstream - PS+PL varijanta
-├── dokumentacija/
-│   ├── PS_PL_AXI_UART.docx      Detaljna dokumentacija PS proširenja (blok dijagram, build, UART)
-│   ├── block_diagram.png         Blok dijagram PS+PL sistema
-│   └── morse_azbuka.png          ITU Morse tabela
-├── morse_pynq.xpr               Vivado projekat (PL-only)
-└── morse_pynq.{cache,hw,runs}/  Vivado radni fajlovi (auto-generisani)
+└── dokumentacija/
+    ├── PS-AXI-PL dokumentacija.docx      Detaljna dokumentacija PS proširenja (blok dijagram, build, UART)
+    ├── Uputstvo za pokretanje.txt        Uputstvo za kompajliranje i pokretanje PL i PS varijanti projekta
+    ├── block_diagram.png         Blok dijagram PS + PL sistema
+    └── morse_azbuka.png          ITU Morse tabela
 ```
 
 ## Dokumentacija
 
-Osnovna dokumentacija je u ovom README-u. Za detalje PS+PL proširenja
+Osnovna dokumentacija je u ovom README-u. Za detalje PS + PL proširenja
 (blok dijagram, AXI handshake protokol, build instrukcije za Vivado i
 Vitis, podešavanje serijskog terminala) pogledati
-[`dokumentacija/PS_PL_AXI_UART.docx`](dokumentacija/PS_PL_AXI_UART.docx).
+[`dokumentacija/PS-AXI-PL dokumentacija.docx`](dokumentacija/PS-AXI-PL%20dokumentacija.docx).
 
 ### Brzi start — PS+PL varijanta
 
@@ -135,7 +134,7 @@ vivado -mode batch -source tcl/build_project_ps.tcl
 #    Vivado Hardware Manager -> Program Device -> output/morse_pynq_ps.bit
 
 # 3. Build i deploy softvera (Vitis Unified IDE ili XSCT)
-#    Detalji u dokumentacija/PS_PL_AXI_UART.docx, sekcija 6
+#    Detalji u dokumentacija/Uputstvo za pokretanje.txt
 
 # 4. Serijski terminal
 #    115200 8N1, COM port (Windows Device Manager) ili /dev/ttyUSB1 (Linux)
